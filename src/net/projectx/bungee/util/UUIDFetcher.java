@@ -26,8 +26,8 @@ public class UUIDFetcher {
 
     private static Gson gson = new GsonBuilder().registerTypeAdapter(UUID.class, new UUIDTypeAdapter()).create();
 
-    private static final String UUID_URL = "https://net.projectx.api.mojang.com/users/profiles/minecraft/%s?at=%d";
-    private static final String NAME_URL = "https://net.projectx.api.mojang.com/user/profiles/%s/names";
+    private static final String UUID_URL = "https://api.mojang.com/users/profiles/minecraft/%s?at=%d";
+    private static final String NAME_URL = "https://api.mojang.com/user/profiles/%s/names";
 
     private static Map<String, UUID> uuidCache = new HashMap<String, UUID>();
     private static Map<UUID, String> nameCache = new HashMap<UUID, String>();

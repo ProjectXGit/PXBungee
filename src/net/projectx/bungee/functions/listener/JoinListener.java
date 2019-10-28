@@ -27,8 +27,9 @@ public class JoinListener implements Listener {
             player.sendMessage(prefix + "Herzlich Willkommen auf dem Server §e" + player.getDisplayName() + "");
         }
         TextComponent component = new TextComponent();
-        component.setText("Nutz §e/help§7 für alle Commands!");
+        component.setText(prefix + "Nutz §e/help§7 für alle Commands!");
         component.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/help"));
         component.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Hier Klicken!!").create()));
+        player.sendMessage(component);
     }
 }

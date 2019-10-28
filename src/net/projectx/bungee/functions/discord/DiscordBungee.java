@@ -26,9 +26,9 @@ public class DiscordBungee extends Command {
         if (args.length == 0) {
             if (commandSender.hasPermission("px.discord.discord")) {
                 builder.append(Data.prefix + "§7§lHilfsübersicht:§r\n");
-                add("verify", "Verifiziert dich mit Discord!");
-                add("info", "Zeigt den Discod Namen an!");
-                add("set", "Setzt den Discord Namen eines Spielers");
+                add("discord verify", "Verifiziert dich mit Discord!");
+                add("discord info", "Zeigt den Discod Namen an!");
+                add("discord set", "Setzt den Discord Namen eines Spielers");
                 commandSender.sendMessage(builder.toString());
             } else {
                 commandSender.sendMessage(Data.noperm);
@@ -96,6 +96,6 @@ public class DiscordBungee extends Command {
 
 
     private void add(String command, String usage) {
-        builder.append("\n" + Data.symbol + "§e/" + command + "§8: §7 " + usage + ChatColor.RESET + "\n");
+        builder.append("\n" + Data.symbol + "§e/" + command + "§8: §7 " + usage + ChatColor.RESET);
     }
 }
