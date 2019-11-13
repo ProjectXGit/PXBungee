@@ -1,6 +1,0 @@
-name: PXBungee
-version: Alpha
-main: net.projectx.bungee.main.Main
-author: Iclipse
-commands:
-  discord:
