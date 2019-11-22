@@ -61,7 +61,7 @@ public class DiscordBungee extends Command {
                         if (!MySQL_User.getDiscordId(UUIDFetcher.getUUID(args[1])).equalsIgnoreCase("-1")) {
                             commandSender.sendMessage(prefix + "Der Spieler §e" + args[1] + "§7 ist verifiziert mit §e" + projectXBot.shardManager.getUserById(MySQL_User.getDiscordId(UUIDFetcher.getUUID(args[1]))).getAsTag());
                         } else {
-                            commandSender.sendMessage(prefix + "§cDer SPieler ist nicht mit Discord verifiziert!");
+                            commandSender.sendMessage(prefix + "§cDer Spieler ist nicht mit Discord verifiziert!");
                         }
                     } else {
                         commandSender.sendMessage(prefix + "Du musst einen Spieler angeben!");
